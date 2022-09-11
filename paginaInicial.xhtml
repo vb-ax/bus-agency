@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv = 'Content-Type' content = 'text/html; charset = UTF-8'/>
+        <link rel = 'stylesheet' href = 'estilo.css'/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <title>PCEX viagens</title>
+    </head>
+    <body>
+        <header>
+            <img src = 'logo.jpg' alt = 'logo' class = 'imgLogo'/>
+            <center><h1 class = 'h1Titulo'>PCEX viagens e turismo</h1></center>
+        </header>
+
+        <div class="w3-panel w3-yellow w3-display-container">
+            <p>Caros clientes e funcionários, estamos em tempos de pandemia, proteja quem você ama. Para isso,
+            use máscara (trocando-a a cada 3 ou 4 horas) e alcool em gel em locais públicos. &#127969; &#128567; &#128154;</p>
+            <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-yellow" style="color:black;">x</span>
+        </div>
+
+        <div id="barra" class="w3-sidebar w3-bar-block" style="width: 18%;display: none">
+            <h5 class="w3-bar-item w3-button" onclick="document.getElementById('barra').style.display='none'" style=" background-color:steelblue; color:white;">Voltar</h5>
+
+            <a class="w3-bar-item w3-button" style="text-decoration:line-through; background-color:steelblue; color:white;">Página Inicial</a>
+
+            <a class="w3-bar-item w3-button" href="chamado.xhtml" style=" background-color:steelblue; color:white;">Chamado</a>
+
+            <a class="w3-bar-item w3-button" href="contratacoes.xhtml" style=" background-color:steelblue; color:white;">Contratações</a>
+
+            <a class="w3-bar-item w3-button" href="politicaPrivacidade.xhtml" style=" background-color:steelblue; color:white;">Política de privacidade</a>
+
+            <a class="w3-bar-item w3-button" href='areaFuncionarios.xhtml' style=" background-color:steelblue; color:white;">Área funcionários</a>
+
+            <a class="w3-bar-item w3-button" href = 'historia.xhtml' style=" background-color:steelblue; color:white;">História</a>
+
+            <a class="w3-bar-item w3-button" href='fotos.xhtml' style=" background-color:steelblue; color:white;">Fotos</a>
+
+            <a class="w3-bar-item w3-button" href='cidades.xhtml' style=" background-color:steelblue; color:white;">Cidades</a>
+
+            <a class="w3-bar-item w3-button" href="quemSomos.html" style=" background-color:steelblue; color:white;">Quem somos?</a>
+
+            <a class="w3-bar-item w3-button " href="referencia.xhtml" style=" background-color:steelblue; color:white;">Referências da empresa</a>
+        </div>
+
+
+        <div class = 'painelLateral'>
+
+            <span class="material-icons w3-margin-top w3-button "
+                  onclick="document.getElementById('barra').style.display='block'" style=" background-color:steelblue; color:white;">
+                Menu Lateral
+                  </span>
+        </div>
+
+        <div id = 'painelTabelas'>
+            <table class = 'w3-table-all' border = '1' align = 'center' cellspacing = '0' >
+                <caption>Tabela de preços</caption>
+                <thead style="background-color:steelblue; color:white;">
+                    <th>Cidade</th>
+                    <th>Partida</th>
+                    <th>Chegada</th>
+                    <th>Preço da passagem</th>
+                    <th>Taxa de desembarque</th>
+                </thead>
+                <tr>
+                    <td>Natal/RN - João Pessoa/PB</td>
+                    <td>5:00/15:30</td>
+                    <td>7:00/18:00</td>
+                    <td >R$25,00</td>
+                    <td>R$1,50</td>
+                </tr>
+
+                <tr>
+                    <td>João Pessoa/PB - Recife/PE</td>
+                    <td>8:00/10:00</td>
+                    <td>9:30/13:10</td>
+                    <td>R$20,20</td>
+                    <td>R$1,80</td>
+                </tr>
+
+                <tr>
+                    <td >Recife/PE - Maceió/AL</td>
+                    <td>9:40/11:00</td>
+                    <td>12:10/15:00</td>
+                    <td>R$36,50</td>
+                    <td>R$1,60</td>
+                </tr>
+
+                <tr>
+                    <td>Maceio/AL - Aracaju/SE</td>
+                    <td>08:40/9:20</td>
+                    <td>11:10/12:00</td>
+                    <td>R$30,00</td>
+                    <td>R$5,10</td>
+                </tr>
+
+                <tr>
+                    <td >Aracaju/SE - Salvador/BA</td>
+                    <td>10:00/17:00</td>
+                    <td>15:00/22:00</td>
+                    <td>R$55,50</td>
+                    <td>R$3,20</td>
+                </tr>
+
+                <tr>
+                    <td>Natal/RN - Fortaleza/CE</td>
+                    <td>5:00/10:00</td>
+                    <td>16:20/21:20</td>
+                    <td>R$80,00</td>
+                    <td>R$2,70</td>
+                </tr>
+
+                <tr>
+                    <td >Fortaleza/CE - Teresina/PI</td>
+                    <td>16:00/18:20</td>
+                    <td>03:40/6:00</td>
+                    <td>R$100,00</td>
+                    <td>R$4,90</td>
+                </tr>
+
+                <tr>
+                    <td>Teresina/PI - São Luís/MA</td>
+                    <td>05:00/10:00</td>
+                    <td>13:00/18:00</td>
+                    <td>R$70,00</td>
+                    <td>R$5,10</td>
+                </tr>
+            </table>
+                
+                <table class="w3-table-all" border = '1' align = 'center' cellspacing = '0' >
+                    <caption>Tabela do itinerário</caption>
+                    <thead style="background-color:steelblue; color:white;">
+                        <th>Cidade</th>
+                        <th colspan = '4'>Itinerário com paradas</th>
+                    </thead>
+                    <tr>
+                        <td>Natal/RN - João Pessoa/PB</td>
+                        <td>Parnamirim/RN</td>
+                        <td>Canguaretama/RN</td>
+                        <td>Mamanguape/PB</td>
+                        <td>Bayeux/PB</td>
+                    </tr>
+                    <tr>
+                        <td>João Pessoa/PB - Recife/PE</td>
+                        <td>Conde/PB</td>
+                        <td>Goiana/PE</td>
+                        <td>Igarasu/PE</td>
+                        <td>Olinda/PE</td>
+                    </tr>
+                    <tr>
+                        <td>Recife/PE - Maceió/AL</td>
+                        <td>Cabo de Santo Agostinho/PE</td>
+                        <td>Sirinharem/PE</td>
+                        <td>Ponta do Mangue/AL</td>
+                        <td>Garça Torta/AL</td>
+                    </tr>
+                    <tr>
+                        <td>Maceió/AL - Aracaju/SE</td>
+                        <td>Barra de São Miguel/AL</td>
+                        <td>Coruripe/AL</td>
+                        <td>Neópolis/SE</td>
+                        <td>Barra dos coqueiros/SE</td>
+                    </tr>
+                    <tr>
+                        <td>Aracaju/SE - Salvador/BA</td>
+                        <td>São Cristovão/SE</td>
+                        <td>Santa Luzia do Ithany/SE</td>
+                        <td>Barra do Itariri/BA</td>
+                        <td>Camaçari/BA</td>
+                    </tr>
+                    <tr>
+                        <td>Natal/RN - Fortaleza/CE</td>
+                        <td>Ceará-Mirim/RN</td>
+                        <td>Mossoró/RN</td>
+                        <td>Mata Fresca/CE</td>
+                        <td>Aquiraz/CE</td>
+                    </tr>
+                    <tr>
+                        <td>Fortaleza/CE - Teresina/PI</td>
+                        <td>Boa Viagem/CE</td>
+                        <td>Crateus/CE</td>
+                        <td>Castelo do Piauí/PI</td>
+                        <td>Altos/PI</td>
+                    </tr>
+                    <tr>
+                        <td>Teresina/PI - São Luís/MA</td>
+                        <td>Caxias/MA</td>
+                        <td>São Mateus do Maranhão/MA</td>
+                        <td>Rosário/MA</td>
+                        <td>Bacabeira/MA</td>
+                    </tr>
+                </table>
+            </div>
+
+        <div class="cardsDiv">
+            <h1>Venha conhecer as capitais do nordeste.</h1>
+            <h3>Veja, nos cartões abaixo, as capitais do nordeste e suas praias. :)</h3>
+
+
+            <div class="w3-row-padding">
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>Aracaju-SE</h5></div>
+                    <img src="aracaju.jpg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h6>João Pessoa-PB</h6></div>
+                    <img src="joaopessoa.jpeg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>Maceio-AL</h5></div>
+                    <img src="maceio.jpg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>Natal-RN</h5></div>
+                    <img src="natal.jpg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>Recife-PE</h5></div>
+                    <img src="recife.jpg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>Salvador-BA</h5></div>
+                    <img src="salvador.jpg" class="imgCard"/>
+                </div>
+
+                <div class="cardCity w3-card w3-col s2">
+                    <div class="w3-container"><h5>São Luís-MA</h5></div>
+                    <img src="saoLuis.jpg" class="imgCard"/>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <center>
+                <hr/>
+                &copy; Copyright PCEX viagens e turismo <br/>
+                Todos os direitos reservados
+            </center>
+        </footer>
+    </body>
+</html>

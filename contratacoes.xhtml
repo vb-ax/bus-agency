@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel = 'stylesheet' href = 'estilo.css'/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <meta http-equiv = 'Content-Type' content = 'text/html'/>
+        <title> PCEX - contratações</title>
+    </head>
+    <body>
+        <header>
+            <img src = 'logo.jpg' alt = 'logo' class = 'imgLogo'/>
+            <center><h1 align = 'center' class = 'h1Titulo'>PCEX viagens e turismo</h1></center>
+        </header>
+
+        <div id="barra" class=" w3-sidebar w3-bar-block" style="width: 18%;display: none">
+            <h5 class="w3-bar-item w3-button" onclick="document.getElementById('barra').style.display='none'" style=" background-color:steelblue; color:white;">Voltar</h5>
+
+            <a class="w3-bar-item w3-button" href="paginaInicial.xhtml" style="background-color:steelblue; color:white;">Página Inicial</a>
+
+            <a class="w3-bar-item w3-button" href="chamado.xhtml" style="background-color:steelblue; color:white;">Chamado</a>
+
+            <a class="w3-bar-item w3-button" style="text-decoration:line-through; background-color:steelblue; color:white;">Contratações</a>
+
+            <a class="w3-bar-item w3-button" href="politicaPrivacidade.xhtml" style=" background-color:steelblue; color:white;">Política de privacidade</a>
+
+            <a class="w3-bar-item w3-button" href="areaFuncionarios.xhtml" style="background-color:steelblue; color:white;">Área funcionários</a>
+
+            <a class="w3-bar-item w3-button" href = 'historia.xhtml' style=" background-color:steelblue; color:white;">História</a>
+
+            <a class="w3-bar-item w3-button" href='fotos.xhtml' style=" background-color:steelblue; color:white;">Fotos</a>
+
+            <a class="w3-bar-item w3-button" href='cidades.xhtml' style=" background-color:steelblue; color:white;">Cidades</a>
+
+            <a class="w3-bar-item w3-button" href="quemSomos.html" style=" background-color:steelblue; color:white;">Quem somos?</a>
+
+            <a class="w3-bar-item w3-button " href="referencia.xhtml" style=" background-color:steelblue; color:white;">Referências da empresa</a>
+        </div>
+
+
+        <div class = 'painelLateral'>
+            <span class="material-icons w3-margin-top w3-button " onclick="document.getElementById('barra').style.display='block'"
+                  style=" background-color:steelblue; color:white;">Menu Lateral</span>
+        </div>
+        
+        <h2 align = 'center'>Contratações</h2>
+            
+        <p>A PCEX  viagens e turismo está fazendo contratações de novos funcionários. Caso você se
+        interece, então preencha o formulário abaixo com seus dados verídicos que iremos analisa-los.</p>
+        
+        <p>Atualmente, nós estamos precisando de 300 novos funcionários para compor nosso time. Essas vagas são distribuidas da seguinte forma:<br/><br/>
+        <ul>
+            <li>100 vagas para motorista;</li>
+            <li>100 vagas para vendedor de passagens;</li>
+            <li>90 vagas para gerente; </li>
+            <li>5 vagas para auxiliar administrativo; e</li>
+            <li>5 vagas para gerente</li>
+        </ul>
+        </p>
+        
+        <p>Após o envio do formulário com as suas informações pessoais, você deve esperar 10 dias úteis para ser chamado para a entrevista. No dia
+        da sua entrevista, é aconselhavél levar seus documentos pessoais, como identidade, cpf, cartão de vacina, carteira de motorista. Se você
+        passar na avaliação, então será encaminhado para fazer alguns exames médicos, afim de saber se você tem algum problema de saúde desconhecido
+        por sua parte, assim, poderá trata-lo e depois retornar as atividades.</p>
+        
+        <div id = 'formContratacao'>
+            
+            <fieldset>
+                <legend>Formulário para contratações</legend>
+                <form id = 'formContratacoes' name = 'contratacoes' action = 'https://formspree.io/f/xpzojzzr' method = 'post'>
+                    <label for = 'nome'>Nome:</label><input type = 'text' id = 'nome' name = 'nome_usuario' class="valueInput"/><br/><br/>
+                    <label for = 'email'>E-mail: </label><input type = 'email' name = 'email_usuario' id = 'email' class="valueInput"/><br/><br/>
+                    <label for = 'tell'>Telefone: </label><input type = 'tell' placeholder = '+55 84 998272789' name = 'telefone_usuario' class="valueInput"/><br/><br/>
+                    <label for = 'endereco'>Endereço: </label><input type = 'text' placeholder = 'Estado, Cidade, Bairro,Rua, Numero' id = 'endereco' name = 'endereco' class="valueInput"/><br/><br/>
+                    <label for = 'cargo'>Cargo: </label><select id = 'cargo' name = 'cargo' class="valueInput">
+                        <option value = 'Motorista'>Motorista</option>
+                        <option value = 'Vendedor'>Vendedor(a)</option>
+                        <option value = 'Supervisor'>Supervisor(a)</option>
+                        <option value = 'Auxiliar administrativo'>Auxiliar administrativo</option>
+                        <option value = 'Gerente'>Gerente</option>
+                    </select><br/><br/>
+                    <label for = 'curriculo'>Currículo: </label>
+                    <input type = 'file' id = 'curriculo' name = 'curriculo' class="valueInput"/><br/><br/>
+                    <input type = 'submit' value = 'Enviar' class = 'btnEnviar' style="background-color: steelblue;"/>
+                    <input type = 'reset' value = 'Apagar' class = 'btnApagar'/>
+                </form>
+            </fieldset>
+        </div>
+        
+        <footer>
+            <hr/>
+                
+            <center>
+                &copy; Copyright PCEX viagens e turismo <br/>
+                Todos os direitos reservados
+            </center>
+        </footer>
+    </body>
+</html>
